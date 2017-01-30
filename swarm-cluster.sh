@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Just for perf, you can skip this.
+START_SEC=$(date +'%s')
+
 set -e
 
 for i in 1 2 3; do
@@ -24,3 +27,6 @@ eval $(docker-machine env node-1)
 
 echo ""
 echo ">> The Swarm Cluster is set up!"
+
+# See how long does it take.
+echo "Done in $(($(date +'%s') - $START_SEC)) seconds"
