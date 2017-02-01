@@ -21,7 +21,7 @@ curl -o swarm-cluster.sh https://raw.githubusercontent.com/vfarcic/docker-flow-p
 ### Creating Swarm Services Through Docker Stack Commands.
 ```shell
 # Creating network
-. setup-stack
+. setup-stack.sh
 ```
 
 ### Cleanup
